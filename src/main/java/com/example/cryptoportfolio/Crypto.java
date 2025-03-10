@@ -1,4 +1,4 @@
-package com.example.cryptoportfolio.model;
+package com.example.cryptoportfolio;
 
 public class Crypto {
     private Integer id;
@@ -7,7 +7,6 @@ public class Crypto {
     private Double price;
     private Double quantity;
 
-    // Constructor
     public Crypto(Integer id, String name, String symbol, Double price, Double quantity) {
         this.id = id;
         this.name = name;
@@ -16,11 +15,6 @@ public class Crypto {
         this.quantity = quantity;
     }
 
-    // Default constructor
-    public Crypto() {
-    }
-
-    // Getters and Setters
     public Integer getId() { return id; }
     public void setId(Integer id) { this.id = id; }
     public String getName() { return name; }
