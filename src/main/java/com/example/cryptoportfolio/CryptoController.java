@@ -1,7 +1,5 @@
-package com.example.cryptoportfolio.controller;
+package com.example.cryptoportfolio;
 
-import com.example.cryptoportfolio.model.Crypto;
-import com.example.cryptoportfolio.service.CryptoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
