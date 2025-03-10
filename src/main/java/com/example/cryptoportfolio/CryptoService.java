@@ -1,6 +1,5 @@
-package com.example.cryptoportfolio.service;
+package com.example.cryptoportfolio;
 
-import com.example.cryptoportfolio.model.Crypto;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -10,10 +9,9 @@ import java.util.Optional;
 @Service
 public class CryptoService {
     private final List<Crypto> cryptoList = new ArrayList<>();
-    private Integer nextId = 1;
 
     public Crypto addCrypto(Crypto crypto) {
-        crypto.setId(nextId++);
+
         cryptoList.add(crypto);
         return crypto;
     }
